@@ -15,6 +15,7 @@ public class CustomListTest {
 
     @Test
     public void addCityTest(){
+        createList();
         int listSize = list.getCount();
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize+1);
